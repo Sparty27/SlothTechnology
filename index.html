@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app/fonts/RubikOne-Regular.woff">
     <link rel="stylesheet" href="app/css/normalize.css">
     <link rel="stylesheet" href="app/css/main.min.css">
 </head>
@@ -14,21 +15,31 @@
     <header class="header">
         <div class="left-block">
             <span>
-                <button style="background-color: #1A1A1D; color: #F6D070">MENU</button>    
+                <button>MENU</button>    
             </span>
         </div>
         <div>
-            <img src="app/images/sloth.png" alt="sloth">
+            <a href="index.html"><img src="app/images/sloth.png" alt="sloth"></a>
         </div>
         <div class="right-block">
-            <span>LOG IN</span>
+            <span>
+                <button>LOG IN</button>  
+            </span>
         </div>
     </header>
 
     <main class="main">
         <section class="hero">
-            <div class="part">
-
+            <div class="hero__part"></div>
+            <div class="hero__message-block">
+                <div class="hero__title">Унікальні IT-рішення</div>
+                <div class="hero__description">Індивідуальна архітектура, найвища безпека та персоналізований підхід для вашого бізнесу!</div>
+            </div>
+            <img class="hero__background" src="app/images/background.jpg" alt="developing">
+            <div class="hero__phone">
+                <div class="hero__phone-part">
+                    <img src="app/images/phone-receiver.jpg" alt="phone-receiver">
+                </div>
             </div>
         </section>
     </main>
