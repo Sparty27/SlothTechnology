@@ -11,7 +11,7 @@ function styles() {
 }
 
 function watching() {
-    watch(['app/scss/main.scss'], styles)
+    watch(['app/scss/**/*.scss'], styles)
 }
 
 exports.styles = styles;
