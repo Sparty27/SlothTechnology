@@ -1,5 +1,5 @@
 .header {
-    height: 100px;
+    height: 53px;
     background-color: #1A1A1D;
 
     display: flex;
@@ -10,25 +10,63 @@
     font-size: 39px;
     font-style: normal;
 
-    div {
-        display: flex;
+    position: relative;
+
+    padding-left: 9px;
+    padding-right: 9px;
+
+    @include match(tablet) {
+        height: 100px;
+
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
-    button {
+    &__button {
         background-color: #1A1A1D;
         color:#F6D070;
     }
 
-    .left-block {
+    &__logo {
+        height: 50px;
+
+        @include match(tablet) {
+            height: 100px;
+        }
+    }
+
+    // &__logo {
+    //     position: relative;
+    // }
+
+    // &__logo-icon {
+    //     position: absolute;
+    //     top: -20px;
+    //     width: 40px;
+    //     height: 40px;
+
+    //     @include match(tablet) {
+    //         top: -50px;
+    //         width: 100px;
+    //         height: 100px;
+    //     }
+    // }
+
+    &__left-block {
         justify-content: center;
         align-items: center;
         height: 100%;
         line-height: 48px;
+        display: none;
 
         border: solid;
         border-width: 2px;
         border-color: #1A1A1D #F6D070 #F6D070 #1A1A1D;
         border-bottom-right-radius: 10px;
+
+        @include match(tablet) {
+            display: flex;
+        }
 
         span {
             margin-left: 50px;
@@ -36,11 +74,12 @@
         }
     }
 
-    .right-block {
+    &__right-block {
         justify-content: center;
         align-items: center;
         height: 100%;
         line-height: 48px;
+        display: none;
 
         border: solid;
         border-width: 2px;
@@ -50,6 +89,34 @@
         span {
             margin-left: 50px;
             margin-right: 50px;
+        }
+
+        @include match(tablet) {
+            display: flex;
+        }
+    }
+
+    &__menu {
+        @include match(tablet) {
+            display: none;
+        }
+    }
+
+    &__login {
+        display: flex;
+        @include match(tablet) {
+            display: none;
+        }
+    }
+
+    &__login-button {
+        padding: 10px;
+        background-color: #696983;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: #404052;
+            transition: background-color, 0.3s;
         }
     }
 }

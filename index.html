@@ -13,17 +13,36 @@
 </head>
 <body>
     <header class="header">
-        <div class="left-block">
+        <div class="header__left-block">
             <span>
-                <button>MENU</button>    
+                <button class="header__button">MENU</button>    
             </span>
         </div>
-        <div>
-            <a href="index.html"><img src="app/images/sloth.png" alt="sloth"></a>
+        <div class="header__menu">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
         </div>
-        <div class="right-block">
+        <div class="header__logo">
+            <a href="index.html">
+                <picture>
+                    <source srcset="app/images/sloth.png" media="(min-width: 768px)" width="100">
+                    <source srcset="app/images/sloth.png" media="(max-width: 768px)" width="40">
+                    <img src="app/images/sloth.png" alt="A sloth">
+                </picture>
+            </a>
+        </div>
+        <div class="header__login">
+            <button class="header__login-button">
+                <img src="app/images/svg/login.svg" alt="login icon">
+            </button>
+        </div>
+        <div class="header__right-block">
             <span>
-                <button>LOG IN</button>  
+                <button class="header__button">LOG IN</button>  
             </span>
         </div>
     </header>
@@ -114,7 +133,8 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+    </footer>
 
     <script src="app/js/main.min.js"></script>
 </body>
