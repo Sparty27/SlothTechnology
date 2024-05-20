@@ -1,0 +1,41 @@
+.footer {
+    background-color: #1E1E1E;
+    color: white;
+    padding-top: 33px;
+    padding-bottom: 33px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 165px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__link {
+        padding: 5px 13px 5px 0px;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(78, 78, 93, 50%);
+    }
+
+    &__item {
+        display: flex;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid;
+        border-radius: 10px;
+
+        padding-right: 5px 13px 5px 5px;
+
+        display: flex;
+    }
+
+    &__social-name {
+        width: 100%;
+    }
+}
