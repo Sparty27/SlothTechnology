@@ -5,66 +5,10 @@
 
 @import "./components/header";
 @import "./components/hero";
+@import "./components/features";
 @import "./components/footer";
 
 .main {
-}
-
-.features {
-    margin-top: 80px;
-    background-color: #D9D9D9;
-    padding: 47px 27px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-
-    &__feature {
-        position: relative;
-        height: 465px;
-        width: 390px;
-    }
-
-    &__number {
-        font-size: 96px;
-        color: #696983;
-
-        position: absolute;        
-        left: 15px;
-        top: 15px;
-        z-index: 3;
-        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    }
-
-    &__title {
-        background-color: #F6D070;
-        padding: 30px 36px 17px;
-        width: 320px;
-        border-radius: 129px;
-        text-align: right;
-        font-size: 20px;
-
-        position: absolute;        
-        top: 70px;
-        right: 0px;
-        z-index: 2;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    &__text {
-        background-color: #EFEFEF;
-        font-size: 16px;
-        padding: 71px 22px 0px 22px;
-        border-radius: 35px;
-        max-width: 265px;
-        min-height: 329px;
-
-        position: absolute;  
-        top: 125px;
-        left: 35px;      
-        z-index: 1;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
 }
 
 .info {
