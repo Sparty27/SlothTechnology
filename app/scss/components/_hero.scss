@@ -1,0 +1,145 @@
+.hero {
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+        background-image: url('../images/background-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__part {
+        width: 33%;
+        height: 747px;
+        background-color: #1E1E1E;
+
+        position: inherit;
+        z-index: 2;
+
+        @include match(tablet) {
+            height: 982px;
+        }
+    }
+
+    &__message-block {
+        position: absolute;
+        z-index: 3;
+        left: 23px;
+        top: 111px;
+
+        @include match(tablet) {
+            left: 146px;
+            top: 359px;
+        }
+    }
+
+    &__title {
+        color: black;
+        background-color: #F6D070;
+        font-size: 24px;
+
+        padding: 30px 30px 30px 40px;
+        border-radius: 129px;
+
+        max-width: 73%;
+        text-align: center;
+
+        @include match(tablet) {
+            max-width: none;
+            text-align: none;
+
+            font-size: 48px;
+            line-height: 42px;
+
+            padding: 57px 181px;
+            border-radius: 129px;
+        }
+    }
+
+    &__description {
+        color: black;
+        background-color: #696983;
+        font-size: 16px;
+
+        margin-top: 37px;
+        padding: 36px 17px 26px 24px;
+        border-radius: 50px;
+
+        max-width: 73%;
+
+        @include match(tablet) {
+            max-width: 798px;
+
+            line-height: 27px;
+            font-size: 32px;
+            padding: 82px 39px;
+
+            margin-top: 49px;
+
+            border-radius: 100px;
+        }
+    }
+
+    &__background {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+
+        display: none;
+        
+        @include match(tablet) {
+            display: block;
+        }
+    }
+
+    &__phone {
+        position: absolute;
+        bottom: 65px;
+        right: 20px;
+
+        background-color: #F6D070;
+        border-radius: 100%;
+
+        width: 70px;
+        height: 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include match(tablet) {
+            width: 211px;
+            height: 211px;
+
+            bottom: 41px;
+            right: -97px;
+        }
+    }
+
+    &__phone-part {
+        width: 53px;
+        height: 53px;
+
+        background-color: white;
+
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include match(tablet) {
+            width: 155px;
+            height: 155px
+        }
+
+        img {
+            width: 31px;
+            height: 31px;
+
+            @include match(tablet) {
+                width: 92px;
+                height: 92px;
+            }
+        }
+    }
+}

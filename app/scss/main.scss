@@ -4,86 +4,10 @@
 @import "./utils/mixin";
 
 @import "./components/header";
+@import "./components/hero";
 @import "./components/footer";
 
 .main {
-}
-
-.hero {
-    position: relative;
-
-    &__part {
-        width: 528px;
-        height: 982px;
-        background-color: #1E1E1E;
-
-        position: inherit;
-        z-index: 2;
-    }
-
-    &__message-block {
-        position: absolute;
-        z-index: 3;
-        left: 146px;
-        top: 359px;
-    }
-
-    &__title {
-        color: black;
-        background-color: #F6D070;
-        font-size: 48px;
-        line-height: 42px;
-
-        padding: 57px 181px;
-        border-radius: 129px;
-    }
-
-    &__description {
-        color: black;
-        background-color: #696983;
-        max-width: 798px;
-        font-size: 32px;
-        line-height: 27px;
-
-        margin-top: 49px;
-        padding: 82px 39px;
-        border-radius: 100px;
-    }
-
-    &__background {
-        position: absolute;
-        right: 0px;
-        bottom: 0px;
-    }
-
-    &__phone {
-        position: absolute;
-        bottom: 41px;
-        right: -97px;
-
-        background-color: #F6D070;
-        border-radius: 100%;
-
-        width: 211px;
-        height: 211px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__phone-part {
-        width: 155px;
-        height: 155px;
-
-        background-color: white;
-
-        border-radius: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .features {
