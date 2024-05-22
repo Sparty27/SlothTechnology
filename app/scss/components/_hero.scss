@@ -1,5 +1,10 @@
 .hero {
     position: relative;
+    margin-top: 53px;
+
+    @include match(tablet) {
+        margin-top: 100px;
+    }
 
     @media screen and (max-width: 767px) {
         background-image: url('../images/background-mobile.jpg');
@@ -92,8 +97,11 @@
     }
 
     &__phone {
-        position: absolute;
-        bottom: 65px;
+        position: fixed;
+
+        z-index: 9;
+        // bottom: 65px;
+        bottom: 20px;
         right: 20px;
 
         background-color: #F6D070;

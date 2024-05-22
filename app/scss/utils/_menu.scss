@@ -1,3 +1,56 @@
+/* Приховуємо меню за замовчуванням */
+.menu-list {
+  position: fixed;
+  top: 53px;
+  left: -100%;
+  width: 100%;
+  height: calc(100% - 53px);
+  background-color: #9F9FA6;
+  color: black;
+  // display: flex;
+  // flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  transition: left 0.5s ease;
+  z-index: 100;
+
+  overflow: scroll;
+
+  // @include match(tablet) {
+  //   top: 100;
+  // }
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  background-color: #9F9FA6;
+}
+
+.menu-list li {
+  // margin: 20px 0;
+  padding: 10px 45px;
+  border-width: 1px;
+  border: solid;
+  border-top-color: rgba(0,0,0,0);
+}
+
+.menu-list a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Показуємо меню, коли доданий клас menu-open */
+.header__menu.menu-open .menu-list {
+  left: 0;
+}
+
+/* When the checkbox is checked, show the menu list */
+#checkbox:checked ~ .menu-list {
+  left: 0;
+}
+
 #checkbox {
     display: none;
   }
@@ -31,7 +84,7 @@
   // }
 
   .toggle:hover .bars {
-    background-color: #404052;
+    background-color: #696983;
   }
   
   #bar2 {

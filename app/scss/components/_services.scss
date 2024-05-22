@@ -1,0 +1,16 @@
+.services {
+
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
+        text-align: center;
+        padding: 14px 38px;
+    }
+
+    &__desc {
+        padding: 15px 20px;
+        text-align: center;
+    }
+}

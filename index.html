@@ -27,6 +27,20 @@
                 <div class="bars" id="bar2"></div>
                 <div class="bars" id="bar3"></div>
             </label>
+            <div class="menu-list">
+                <div>
+                    <ul>
+                        <li><a href="#">Реєстрація</a></li>
+                        <li><a href="#">Авторизація</a></li>
+                        <li><a href="#">Контакт</a></li>
+                        <li><a href="#">Портфоліо</a></li>
+                        <li><a href="#">Ми</a></li>
+                        <li><a href="#">Послуги</a></li>
+                        <li><a href="#">Калькулятор вартості послуг</a></li>
+                        <li><a href="#">Theme toggle</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="header__logo">
             <a href="index.html">
@@ -240,6 +254,19 @@
                 </div> -->
             </div>
         </section>
+        <section class="services">
+            <div>
+                <p class="services__title">
+                    Калькулятор вартості послуг
+                </p>
+                <p class="services__desc">
+                    Цікавить вартість розробки сайту? Наш калькулятор дає можливість вивчити вартість кожного етапу і підібрати відповідний під бюджет варіант.
+                </p>
+            </div>
+            <div>
+
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -275,6 +302,10 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+        });
+
+        document.querySelector('.toggle').addEventListener('click', function() {
+            document.querySelector('.header__menu').classList.toggle('menu-open');
         });
     </script>
 </body>

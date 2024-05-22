@@ -1,12 +1,14 @@
 @import "./base/reset";
 @import "./base/configure";
-@import "./utils/menu";
 @import "./utils/mixin";
+@import "./utils/menu";
+
 
 @import "./components/header";
 @import "./components/hero";
 @import "./components/features";
 @import "./components/info";
+@import "./components/services";
 @import "./components/footer";
 
 .main {
