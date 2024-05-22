@@ -1,0 +1,206 @@
+.info {
+    margin-top: 50px;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        background-image: url("../images/background 2.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__image {
+        display: none;
+
+        @include match(tablet) {
+            display: block;
+        }
+    }
+
+    &__container {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @include match(tablet) {
+            padding-top: 25px;
+            position: relative;
+        }
+    }
+
+    &__advertisement {
+        background-color: #D9D9D9;
+        padding: 80px 36px 73px 36px;
+
+        @media screen and (max-width: 767px) {
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+        @include match(tablet) {
+            padding: 128px 95px 56px 85px;
+        }
+    }
+
+    &__header {
+        max-width: 290px;
+        font-size: 32px;
+
+        @include match(tablet) {
+            -webkit-text-stroke: 0.2px #696983;
+            max-width: none;
+        }
+    }
+
+    &__header__yellow {
+        color: #F6D070;
+    }
+
+    &__text {
+        margin-top: 70px;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.card {
+    max-width: 324px;
+
+    &__title {
+        background-color: #1E1E1E;
+        color: #D9D9D9;
+    }
+
+    &__title__yellow {
+        color: #F6D070;
+    }
+
+    &__text {
+        max-width: 217px;
+        background-color: rgba(217,217,217, 0.9);
+        padding: 40px 14px 25px 14px; 
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        font-size: 14px
+    }
+}
+
+.info__card {
+    display: flex;
+    margin-bottom: 28px;
+
+    &:last-child {
+        margin-bottom: 68px;
+    }
+}
+
+.info__card:nth-child(odd) {
+    justify-content: start;
+
+    .card {
+    }
+
+    .card__title {
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+        padding: 10px 35px 10px 42px
+    }
+
+    .card__text {
+        margin-left: 85px;
+    }
+}
+
+.info__card:nth-child(even) {
+    justify-content: end;
+
+    .card {
+    }
+
+    .card__title {
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+
+        padding: 10px 75px 10px 56px
+    }
+
+    .card__text {
+        margin-left: 43px;
+    }
+}
+
+// .cards {
+//     // padding: 83px 105px 62px 75px;
+
+//     .card-container {
+//         &:nth-of-type(2) {
+//             @include match(tablet) {
+//                 position: absolute;
+//                 top: 576px;
+//                 right: 0px;
+//             }
+//         }
+
+//         &:nth-of-type(3) {
+//             @include match(tablet) {
+//                 position: absolute;
+//                 bottom: 357px;
+//                 left: 215px;
+//             }
+//         }
+//     }
+
+//     .card {
+//         width: 357px;
+//         position: relative;
+
+//         &__title {
+//             background-color: #9F9FA6;
+//             border-radius: 25px;
+//             display: flex;
+//             align-items: center;
+//             gap: 25px;
+//             padding-left: 10px;
+//             padding-right: 25px;
+//             padding-top: 5px;
+//             padding-bottom: 5px;
+//             -webkit-text-stroke: 0.6px #696983;
+//             position: absolute;
+//             z-index: 2;
+//             top: 0px;
+
+//             &__yellow {
+//                 color: #F6D070;
+//             }
+
+//             p {
+//                 font-size: 20px;
+//                 max-width: 242px;
+//             }
+
+//             div {
+//                 width: 54px;
+//                 height: 54px;
+//                 border-radius: 25px;
+//                 background-color: #D9D9D9;
+//                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//             }
+//         }
+
+//         &__text {
+//             max-width: 296px;
+//             padding: 87px 15px 40px 25px;
+//             position: absolute;
+//             top: 20px;
+//             right: 0px;
+//             z-index: 1;
+
+//             background-color: #D9D9D9;
+//             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//         }
+//     }
+// }
